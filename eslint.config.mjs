@@ -12,6 +12,10 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Course reference materials (not part of the app):
+    "prostore-main/**",
+    "resources/**",
+    "docs/**",
   ]),
 ]);
 

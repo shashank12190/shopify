@@ -8,7 +8,6 @@ import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
   DropdownMenuContent,
-  DropdownMenuLabel,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
@@ -17,6 +16,10 @@ const ModeToggle = () => {
   const { theme, setTheme } = useTheme();
 
   useEffect(() => {
+    // Intentional hydration-mismatch guard: next-themes can't know the
+    // stored theme until after client mount, so we defer rendering the
+    // theme-dependent icon until then.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
   }, []);
 
