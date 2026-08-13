@@ -46,3 +46,12 @@ next-env.d.ts
 /prostore-main
 /resources
 /docs
+
+# local planning/instruction docs (not app code)
+/.agents
+/.claude
+/.windsurf
+/AGENTS.md
+/CLAUDE.md
+/00-build-map.md
+/BUILD-PLAN.md
